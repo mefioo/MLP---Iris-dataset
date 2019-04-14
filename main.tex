@@ -1,0 +1,57 @@
+\documentclass[]{mgr}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{marvosym}
+
+\author{Maciej Adamski \\ Andrzej Krawczuk}
+\title{MLP - Iris dataset}
+\guardian{dr inż. Krzysztof Halawa}
+\field{Automatyka i Robotyka (AiR)} 
+\specialisation{Technologie informacyjne w systemach automatyki (ART)} 
+\date{2019} 
+
+
+\author{Maciej Adamski \\ Andrzej Krawczuk }
+\date{April 2019}
+
+\begin{document}
+
+\maketitle
+
+\chapter{Opis projektu}
+\section{Wymagania projektowe}
+Wymaganiem dotyczącym pierwszego projektu z przedmiotu ,,Sieci neronowe i nerosterowniki" było stworzenie własnej wielowarstwowej sieci neuronowej. W przypadku autorów tematem prac był problem danych Iris, który został zatwierdzony przez prowadzącego na pierwszych zajęciach. 
+
+\section{Problem klasyfikacji Iris}
+Zestaw danych ,,Iris dataset" jest 150-elementowym zbiorem zmierzonych długości oraz szerokości płatków i działek irysów. Można na tej podstawie stwierdzić do jakiego z trzech gatunków irysa należy dana jednostka: 
+\begin{itemize}
+    \item \textit{Iris-setosa}
+    \item \textit{Iris-versicolor}
+    \item \textit{Iris-virginica}
+\end{itemize}
+
+\section{Cel projektu}
+Na podstawie wymagań postawionych przez prowadzącego celem powyższego projektu było stworzenie wielowarstwowej sieci neuronowej, która rozwiązywałaby problem klasyfikacji irysów. 
+
+\section{Cechy technologiczne}
+\begin{itemize}
+    \item Język programowania: Python 3
+    \item Środowisko programistyczne: PyCharm Community Edition
+    \item Użyte biblioteki: NumPy, Scikit-learn, Mlxtend
+\end{itemize}
+
+\chapter{Opis sieci neuronowej}
+
+
+\section{Opis teoretyczny}
+W celu realizacji projektu stworzona została sieć neuronowa trójwarstwowa działająca na zasadzie propagacji w przód oraz propagacji wstecznej. W zależności od ilości epok oraz współczynnika uczenia wylicza oraz aktualizuje wagi po każdej epoce by ostatecznie zdecydować do jakiej klasy należy dany irys. Końcowo zwracana jest skuteczność algorytmu, który porównuje wyniki do tych pobranych z gotowego zestawu danych. Cała sieć złożona jest z trzech warstw:
+\begin{enumerate}
+    \item Warstwa wejściowa: 4 neurony
+    \item Warstwa ukryta: liczba neuronów definiowana przez użytkownika
+    \item Warstwa wyjściowa: 1 neuron
+\end{enumerate}
+
+\chapter{Testy porównawcze i wnioski}
+
+
+\end{document}
